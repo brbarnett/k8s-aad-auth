@@ -1,0 +1,1 @@
+# Authentication a Kubernetes app with Azure AD
