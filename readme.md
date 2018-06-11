@@ -30,3 +30,5 @@ kubectl apply -f oauth2-proxy.service.yaml
 kubectl apply -f web.deployment.yaml
 kubectl apply -f web.service.yaml
 ```
+
+To test, navigate to or GET (don't forget a bearer token) [https://todo-aks-cluster.centralus.cloudapp.azure.com](https://todo-aks-cluster.centralus.cloudapp.azure.com)
