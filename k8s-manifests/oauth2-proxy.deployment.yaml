@@ -3,31 +3,25 @@ kind: Deployment
 metadata:
   name: oauth2-proxy
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: oauth2-proxy
   template:
     metadata:
       labels:
-        k8s-app: oauth2-proxy
+        app: oauth2-proxy
     spec:
       containers:
       - args:
-        - --provider=github
+        - --provider=azure
         - --email-domain=*
         - --upstream=file:///dev/null
         - --http-address=0.0.0.0:4180
-        # Register a new application
-        # https://github.com/settings/applications/new
-        env:
+        - --azure-tenant=5fbbce2a-c3e6-4b5e-a51f-222674fdb44d
+      env:
         - name: OAUTH2_PROXY_CLIENT_ID
-          value: <Client ID>
-        - name: OAUTH2_PROXY_CLIENT_SECRET
-          value: <Client Secret>
-        # docker run -ti --rm python:3-alpine python -c 'import secrets,base64; print(base64.b64encode(base64.b64encode(secrets.token_bytes(16))));'
-        - name: OAUTH2_PROXY_COOKIE_SECRET
-          value: SECRET
+          value: 947522eb-ed4c-45b0-bd98-e8f2858ef34b
         image: docker.io/colemickens/oauth2_proxy:latest
         imagePullPolicy: Always
         name: oauth2-proxy
