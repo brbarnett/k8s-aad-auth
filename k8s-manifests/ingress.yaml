@@ -11,13 +11,13 @@ metadata:
 spec:
   tls:
     - hosts:
-      - localhost
-      secretName: localhost-tls
+      - todo-aks-cluster.centralus.cloudapp.azure.com
+      secretName: todo-aks-cluster-com-tls
   rules:
-  - host: localhost
+  - host: todo-aks-cluster.centralus.cloudapp.azure.com
     http:
       paths:
       - path: /
         backend:
-          serviceName: oauth2-proxy
-          servicePort: 4180
+          serviceName: web
+          servicePort: 80
