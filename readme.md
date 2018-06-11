@@ -1,4 +1,5 @@
 # Authenticating a Kubernetes app with Azure AD
+This sample application is based on [https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/auth/oauth-external-auth](https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/auth/oauth-external-auth)
 
 ## Deploying to Kubernetes cluster
 ```
