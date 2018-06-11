@@ -2,6 +2,8 @@
 This sample application is based on [https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/auth/oauth-external-auth](https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/auth/oauth-external-auth)
 
 ## Deploying to Kubernetes cluster
+Note: these instructions are specific to an Azure AKS cluster. I assume you have Helm installed and initialized on your cluster.
+
 ```
 helm install stable/nginx-ingress \
     --name nginx-ingress \
