@@ -21,8 +21,8 @@ kubectl apply -f cert-issuer.yaml
 kubectl apply -f ingress.yaml
 kubectl apply -f oauth2-proxy-ingress.yaml
 
-kubectl apply -f oauth2-proxy.deployment.deployment.yaml
-kubectl apply -f oauth2-proxy.deployment.service.yaml
+kubectl apply -f oauth2-proxy.deployment.yaml
+kubectl apply -f oauth2-proxy.service.yaml
 
 kubectl apply -f web.deployment.yaml
 kubectl apply -f web.service.yaml
