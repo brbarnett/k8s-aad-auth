@@ -15,7 +15,7 @@ spec:
       containers:
       - args:
         - --provider=azure
-        - --email-domain=*
+        - --email-domain=rightpoint.com
         - --upstream=file:///dev/null
         - --http-address=0.0.0.0:4180
         - --azure-tenant=5fbbce2a-c3e6-4b5e-a51f-222674fdb44d
