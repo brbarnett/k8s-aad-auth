@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: auth-proxy
+spec:
+  selector:
+    matchLabels:
+      app: auth-proxy
+  replicas: 3
+  template:
+    metadata:
+      labels:
+        app: auth-proxy
+    spec:
+      containers:
+      - name: auth-proxy
+        image: a5huynh/oauth2_proxy:2.2-debian
+        ports:
+        - containerPort: 80
