@@ -17,7 +17,7 @@ spec:
   - host: todo-aks-cluster.centralus.cloudapp.azure.com
     http:
       paths:
-      - path: /
+      - path: /api
         backend:
-          serviceName: web
+          serviceName: api
           servicePort: 80
