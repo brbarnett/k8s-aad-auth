@@ -22,6 +22,7 @@ helm install stable/cert-manager \
 kubectl apply -f cert-issuer.yaml
 
 kubectl apply -f secured-ingress.yaml
+kubectl apply -f unsecured-ingress.yaml
 kubectl apply -f oauth2-proxy-ingress.yaml
 
 kubectl apply -f oauth2-proxy.deployment.yaml
