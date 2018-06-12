@@ -1,7 +1,7 @@
 # Authenticating a Kubernetes app with Azure AD
-This sample application is based on [https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/auth/oauth-external-auth](https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/auth/oauth-external-auth)
+The purpose of this project is to provide a starting point for client applications that are hosted alongside a secured microservice API hosted on the Kubernetes orchestrator.
 
-See [https://github.com/brbarnett/much-todo-about-containers](https://github.com/brbarnett/much-todo-about-containers) for more details on how to set up the cluster.
+This sample application is based on [https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/auth/oauth-external-auth](https://github.com/kubernetes/ingress-nginx/tree/master/docs/examples/auth/oauth-external-auth). See [https://github.com/brbarnett/much-todo-about-containers](https://github.com/brbarnett/much-todo-about-containers) for more details on how to set up the cluster.
 
 ## Architecture
 This project is set up with three primary ingress resources:
